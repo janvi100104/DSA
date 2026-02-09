@@ -1,15 +1,15 @@
 import java.util.Arrays;
 
 public class stringImp {
-    public static void main(Implement[] args) {
-        Implement name ="janvi";
+    public static void main(String[] args) {
+        String name ="janvi";
     
         char target='k';
         System.out.println(search2(name,target));
     
         System.out.println(Arrays.toString(name.toCharArray()));
     }
-    static boolean search(Implement str, char target){
+    static boolean search(String str, char target){
         if(str.length() == 0){
             return false;
         }
@@ -22,7 +22,7 @@ public class stringImp {
     return false;
     }
 
-         static boolean search2(Implement str, char target){
+         static boolean search2(String str, char target){
         if(str.length() == 0){
             return false;
         }

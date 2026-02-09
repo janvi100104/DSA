@@ -1,7 +1,7 @@
 
 
 public class implement {
-    public static void main(Implement[] args) {
+    public static void main(String[] args) {
         int[] nums = {1,3,6,4,3};
         System.out.println(linearSearch(nums,6));
     }

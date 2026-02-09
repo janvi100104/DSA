@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class TwoDArray {
-   public static void main(Implement[] args) {
+   public static void main(String[] args) {
     int[][] arr = {
         {1,2,3,4},{5,6},{8,7,6,5,4,3,2}
     } ;

@@ -1,5 +1,5 @@
 public class EvenDigits {
-    public static void main(Implement[] args) {
+    public static void main(String[] args) {
      int[] nums = {12,456,8764};
      System.out.println(findNumbers(nums));   
     }
