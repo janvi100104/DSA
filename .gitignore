@@ -1,0 +1,86 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Maven build output
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+# Gradle build output
+build/
+.gradle
+gradle-app.setting
+
+# IDE and Text Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.classpath
+.project
+.settings/
+*.iml
+*.iws
+*.ipr
+*.sublime-workspace
+*.sublime-project
+
+# IntelliJ IDEA
+out/
+*.goutputstream*
+
+# NetBeans
+nbproject/
+.nb-gradle/
+.nb-gradle-properties
+
+# Eclipse
+.metadata
+.recommenders
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# Compiled output files
+*.out
+output.txt
+*.o
+
+# Custom settings
+.custom-settings.properties
+
+# Node (if using node tools)
+node_modules/
+package-lock.json
+yarn.lock
