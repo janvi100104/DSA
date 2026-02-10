@@ -291,11 +291,38 @@ public class Pattern {
 
 
 }
+public void voidSquare(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(i==0 || i==n-1 || j==0 || j==n-1){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+
+        }
+        System.out.println();
+    }
+}
+public void numberMaze(int n){
+    for(int i=0;i<2*n-1;i++){
+        for(int j=0;j<2*n-1;j++){
+           int top =i;
+           int bottom = 2*n-2 - i;
+              int left = j;
+                int right = 2*n-2 - j;
+                int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+                System.out.print((n - min) + " ");  
+    }
+        System.out.println();
+}
+}
 
     public static void main(String[] args) {
         Pattern p = new Pattern();
         
     
-        p.VoidPattern2(5);
+        p.voidSquare(5);
+        p.numberMaze(4);
     }
 }
