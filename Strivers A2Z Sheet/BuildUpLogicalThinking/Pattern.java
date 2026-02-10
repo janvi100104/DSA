@@ -165,9 +165,137 @@ public class Pattern {
             
         }
      }
+      public void alphabetPyramid(int n){
+        
+          for(int i=0;i<n;i++){
+              for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+                
+            }
+            char ch = 'A';
+            int breakPoint = (2*i+1)/2;
+              
+              for (int j = 1; j <= 2 * i + 1; j++) {
+                System.out.print(ch);
+
+                // Increment or decrement character
+                if (j <= breakPoint) ch++;
+                else ch--;
+            }
+           
+            System.out.println("");
+
+            
+        }
+     }
+    
+     public void VoidPattern(int n) {
+
+    int inis = 0;
+
+    
+    for (int i = 0; i < n; i++) {
+
+        // Left stars
+        for (int j = 0; j < n - i; j++) {
+            System.out.print("* ");
+        }
+
+        // Middle spaces
+        for (int j = 0; j < inis; j++) {
+            System.out.print("  ");
+        }
+
+        // Right stars
+        for (int j = 0; j < n - i; j++) {
+            System.out.print("* ");
+        }
+
+        inis += 2;
+        System.out.println();
+    }
+
+    inis = 2 * n - 2;
+
+
+    for (int i = 1; i <= n; i++) {
+
+        // Left stars
+        for (int j = 0; j < i; j++) {
+            System.out.print("* ");
+        }
+
+        // Middle spaces
+        for (int j = 0; j < inis; j++) {
+            System.out.print("  ");
+        }
+
+        // Right stars
+        for (int j = 0; j < i; j++) {
+            System.out.print("* ");
+        }
+
+        inis -= 2;
+        System.out.println();
+    }
+}
+ public void VoidPattern2(int n) {
+
+    int inis = 2 * n - 2;
+
+    // Lower half
+    for (int i = 1; i < n; i++) {
+
+        // Left stars
+        for (int j = 0; j < i; j++) {
+            System.out.print("* ");
+        }
+
+        // Middle spaces
+        for (int j = 0; j < inis; j++) {
+            System.out.print("  ");
+        }
+
+        // Right stars
+        for (int j = 0; j < i; j++) {
+            System.out.print("* ");
+        }
+
+        inis -= 2;
+        System.out.println();
+
+    }
+     inis = 0;
+
+    // Upper half
+    for (int i = 0; i < n; i++) {
+
+        // Left stars
+        for (int j = 0; j < n - i; j++) {
+            System.out.print("* ");
+        }
+
+        // Middle spaces
+        for (int j = 0; j < inis; j++) {
+            System.out.print("  ");
+        }
+
+        // Right stars
+        for (int j = 0; j < n - i; j++) {
+            System.out.print("* ");
+        }
+
+        inis += 2;
+        System.out.println();
+    }
+
+
+}
+
     public static void main(String[] args) {
         Pattern p = new Pattern();
         
-        p.reverseNumberTriangle(5);
+    
+        p.VoidPattern2(5);
     }
 }
